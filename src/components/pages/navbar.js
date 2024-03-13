@@ -16,10 +16,12 @@ const Navbar = () => {
   return (
       <div className='links'>
       <nav className='navbar'>
-       <ul className="list-unstyled d-flex">
+              <ul className={`list-unstyled d-flex ${click ? "nav-menu active" : "nav-menu"}`}>
+                  <li  className='nav-item px-3'>
               <Link to='/'>
                  Home
-          </Link>
+                      </Link>
+                      </li>
           </ul>
               <div className='hamburger' onClick={handleClick}>
                   {click ? (<FaTimes size={30} style=  {{ color: '#ffffff' }} />)
@@ -29,16 +31,16 @@ const Navbar = () => {
         
               <ul className={`list-unstyled d-flex ${click ? "nav-menu active" : "nav-menu"}`}>
                   <li className='nav-item px-3'>
-                      <Link to='about' spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>About</Link>
+                      <Link to='about' spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>About</Link>
                   </li>
                   <li className='nav-item px-3'>
-                      <Link to ='projects'  spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Projects</Link>
+                      <Link to ='projects'  spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>Projects</Link>
                   </li>
                   <li className='nav-item px-3'>
-                      <Link to='blogs'  spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Blogs</Link>
+                      <Link to='blogs'  spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>Blogs</Link>
                   </li>
                   <li className='nav-item px-3'>
-                      <Link to='contacts'  spy={true} smooth={true} offset={-100} duration={500} onClick={closeMenu}>Contacts</Link>
+                      <Link to='contacts'  spy={true} smooth={true} offset={-40} duration={500} onClick={closeMenu}>Contacts</Link>
                   </li>
               </ul>
           </nav>

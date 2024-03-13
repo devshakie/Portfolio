@@ -3,7 +3,7 @@ import React from 'react'
 const Contacts = () => {
   return (
     <div id='contacts'>
-      contacts
+          <h2 className='title'>contacts.</h2>
     </div>
   )
 }
