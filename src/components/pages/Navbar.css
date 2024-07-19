@@ -1,4 +1,5 @@
 nav{
+
     display: flex;
     position: sticky;
     top: 0 ;
@@ -9,16 +10,14 @@ nav{
 
 
 nav ul li .active{
-    background-color:  rgb(205, 205, 233);
     border-bottom: rgb(241, 234, 129);
-    
 
 }
 
  
 nav ul li :not(.active):hover{
-    background-color: rgb(225, 225, 241);
-    border-bottom: rgb(241, 234, 129);
+    
+    border-bottom:2px solid rgb(241, 234, 129);
     
     
 }
@@ -49,7 +48,8 @@ nav .menu span{
 
     }
     nav ul{
-        display:none;
+        display: flex;
+        justify-content: center; 
         flex-direction: column;
         width:100% ;
         margin-bottom: 0.25rem;
@@ -60,10 +60,11 @@ nav .menu span{
 
     }
     nav ul li{
-        margin: o.2rem 0.5rem;
+        margin: 0.2rem 0.5rem;
     }
 }
 .links{
+    
     color:rgb(3,4,94);
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:"Poppins";
 }

@@ -2,9 +2,13 @@ import React from 'react';
 import './home.css';
 
 const Home = () => {
+  const handleDownloadResume = () => {
+    const resumeUrl = '/ResumeUX.pdf';
+    window.open(resumeUrl, '_blank');
+  };
   return (
     <div className='home'>
-      <img src= "images/test.jpg" alt=""/>
+      <img src= "images/test.jpg" alt="" className='imghome'/>
       <div className='circle'></div>
       <div className='strokes'>
         /////
@@ -17,6 +21,9 @@ const Home = () => {
         Developer</p>
       <p className='txt3'>Based in Kenya.</p>
       
+      <button className='button' onClick={handleDownloadResume}>Resume</button>
+      
+
      </div>
   )
 }

@@ -4,11 +4,12 @@
     position: relative;
 }
 .title{
+user-select: none;
 width: 341px;
 height: 116px;
 top: 989px;
 margin-left:97px;
-font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-family:"Poppins";
 font-size: 100px;
 font-weight: 800;
 line-height: 116px;

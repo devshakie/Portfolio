@@ -1,0 +1,55 @@
+.contacts{
+user-select: none;
+height: 100vh;
+width: 100%;
+position: relative;
+}
+.title{
+width: 341px;
+height: 116px;
+top: 989px;
+margin-left:97px;
+font-family:"Poppins";
+font-size: 100px;
+font-weight: 800;
+line-height: 116px;
+letter-spacing: 0em;
+text-align: left;
+color: rgb(241, 234, 129);
+
+
+}
+.contact-img{
+    user-select: none;
+    float: left;
+    margin-left: 97px;
+}
+.contact-info-upper-container{
+    color:rgb(3,4,94);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+.contact-info-container{
+    display:flex;
+    align-items: center;
+    gap:0.8rem;
+    padding-left: 40px;
+ 
+
+}
+
+.contact-icon{
+    border-radius: 40%;
+    align-items: center;
+    height: 2rem;
+    width: 2rem; 
+}   
+.p{
+    position: relative;
+    margin-top: 15px;
+    text-decoration: none;
+    
+}
+.totop{
+    float: right;
+}
